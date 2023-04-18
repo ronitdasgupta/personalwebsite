@@ -21,11 +21,12 @@ const AboutMe = () => {
     <div>
       <h2>About Me</h2>
       <p>
-        Hello! My name is Ronit Dasgupta and I am currently a Freshman in the
-        College of Engineering at the University of Washington. As an
-        engineering student, I am very interested in pursuing a profession
-        related to computer science and engineering. I am always open to
-        learning and I enjoy working with people to find solutions!
+        Hello! My name is Ronit Dasgupta and I am a student at the University of
+        Washington with a deep passion for Computer Science / Electrical &
+        Computer Engineering. As an engineering student, I am very interested in
+        pursuing a profession related to computer science and engineering. I am
+        always open to learning and I enjoy working with people to find
+        solutions!
       </p>
     </div>
   );
@@ -54,6 +55,8 @@ const Experience = () => {
       case "dubvelopers":
         navigate("/dubvelopers");
         break;
+      case "interactiveintelligence":
+        navigate("/interactiveintelligence");
       default:
         break;
     }
@@ -91,6 +94,12 @@ const Experience = () => {
         onClick={() => handleButtonClick("dubvelopers")}
       >
         Dubvelopers
+      </button>
+      <button
+        className="exp-button"
+        onClick={() => handleButtonClick("interactiveintelligence")}
+      >
+        Interactive Intelligence
       </button>
     </div>
   );
@@ -219,6 +228,22 @@ const Dubvelopers = () => {
         up our environment while also scheduling meetings with MSA leaders to
         ensure we understand the needs that they want in the website that we
         create for them.
+      </p>
+    </div>
+  );
+};
+
+const InteractiveIntelligence = () => {
+  return (
+    <div>
+      <h2>Interactive Intelligence</h2>
+      <p>
+        I am currently participating in the Intro to Neur-AI course which covers
+        the following topics in detail: ML, DL, neuroanatomy, computer vision,
+        RL, language modeling, PyTorch, Jupiter Notebooks, LaTeX, etc. I am also
+        conducting research relating to biologically inspired memory and
+        exploring the neural networks associated with humans through
+        computational algorithms/methods.
       </p>
     </div>
   );
@@ -407,7 +432,7 @@ const Home = () => {
   const handleNavigate = (path: To) => {
     if (path === "/resume") {
       window.open(
-        "https://drive.google.com/file/d/1N-houvXFLCAQDu455-TcTVb8q2sYwzkg/view?usp=sharing",
+        "https://docs.google.com/document/d/1_5dh9YAO2oPY361O-sDvNUiyUjqvi97TBuVeHHrrM7I/edit?usp=sharing",
         "_blank"
       );
     } else {
@@ -447,6 +472,10 @@ const App = () => {
           <Route path="/dubhacks" element={<DubHacks />} />
           <Route path="/husky" element={<HuskyCodingProject />} />
           <Route path="/dubvelopers" element={<Dubvelopers />} />
+          <Route
+            path="/interactiveintelligence"
+            element={<InteractiveIntelligence />}
+          />
           <Route path="/anythingle" element={<Anythingle />} />
           <Route path="/covidbooking" element={<CovidBooking />} />
           <Route
