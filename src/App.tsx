@@ -178,6 +178,16 @@ const Dev0 = () => {
         they left with a working Tic-Tac-Toe solution using the Flutter
         framework.
       </p>
+      <p>
+        Flutter Workshop Recording - Ronit Dasgupta:{" "}
+        <a
+          href="https://drive.google.com/file/d/133nUu9CdcGpqTkRvw1b8N_dor96Rs4ih/view"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://drive.google.com/file/d/133nUu9CdcGpqTkRvw1b8N_dor96Rs4ih/view
+        </a>
+      </p>
     </div>
   );
 };
@@ -233,7 +243,14 @@ const HuskyCodingProject = () => {
         on our project and finished prototyping our web app in Figma. After
         prototyping we have delegated tasks to various team members to complete.
         I am working on the back-end for this project and am currently working
-        on setting up and integrating a database with our web app.
+        on setting up and integrating a database with our web app. We have
+        decided to use Python, Flask, React, and Firebase/Firestore to create
+        the website.
+      </p>
+      <p>
+        For the upcoming school year I will be a Club Lead | Onboarding Team in
+        which I will attend weekly meetings to ensure Husky Coding Project
+        expands as a club and gives more exposure to our members.
       </p>
     </div>
   );
@@ -248,10 +265,16 @@ const Dubvelopers = () => {
         programming teams to help local organizations/communities. The team I am
         part of is working with the Muslim Student Association (MSA) to help
         create and update their website. Our team is split into a design and
-        coding team. I am part of the coding team and we are currently setting
-        up our environment while also scheduling meetings with MSA leaders to
-        ensure we understand the needs that they want in the website that we
-        create for them.
+        coding team. I am part of the coding team and we just published our
+        finished website. In order to create the website, I mainly used React to
+        create some of the pages for the website based on the Figma prototypes
+        that were provided to us by our design team.
+      </p>
+      <p>
+        Muslim Student Association (MSA) Website Link:{" "}
+        <a href="https://msauw.org/" target="_blank" rel="noopener noreferrer">
+          https://msauw.org/
+        </a>
       </p>
     </div>
   );
