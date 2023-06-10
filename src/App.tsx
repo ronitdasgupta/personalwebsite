@@ -57,6 +57,8 @@ const Experience = () => {
         break;
       case "interactiveintelligence":
         navigate("/interactiveintelligence");
+      case "primerica":
+        navigate("/primerica");
       default:
         break;
     }
@@ -65,6 +67,12 @@ const Experience = () => {
   return (
     <div className="experience">
       <h2>Experience</h2>
+      <button
+        className="exp-button"
+        onClick={() => handleButtonClick("primerica")}
+      >
+        Primerica
+      </button>
       <button
         className="exp-button"
         onClick={() => handleButtonClick("codeahead")}
@@ -109,6 +117,22 @@ const Resume = () => {
   return (
     <div>
       <h2>Resumé</h2>
+    </div>
+  );
+};
+
+const Primerica = () => {
+  return (
+    <div>
+      <h2>Primerica</h2>
+      <p>
+        I will be working as a full-time paid intern the summer of 2023 working
+        with Primerica. During the internship, I will be using SQL Server,
+        Python, Docker, ETL / tools, and Node.js to help the company organize
+        database tables and transfer large amounts of data in a safe and
+        efficient way. I will also be working with CSV files and transferring
+        data into database tables using db2.
+      </p>
     </div>
   );
 };
@@ -466,6 +490,7 @@ const App = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/links" element={<Links />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/primerica" element={<Primerica />} />
           <Route path="/codeahead" element={<CodeAhead />} />
           <Route path="/dev0" element={<Dev0 />} />
           <Route path="/gencyber" element={<GenCyberVirtualCamp />} />
